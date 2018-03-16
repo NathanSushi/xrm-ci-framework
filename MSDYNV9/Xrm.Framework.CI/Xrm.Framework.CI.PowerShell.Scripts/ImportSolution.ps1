@@ -94,7 +94,7 @@ if ($override -or ($solution -eq $null) -or ($solution.Version -ne $solutionInfo
     Write-Verbose "Import Error Text: $importErrorText"
     Write-Verbose $importJob.Data
 
-    	if ($importResult -ne "success")
+	if ($importProgress -ne 100)
     {
         throw "Import Failed"
     }
